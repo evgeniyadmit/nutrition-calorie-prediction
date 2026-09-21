@@ -20,7 +20,7 @@ A deep learning model for predicting the total caloric content of a dish using t
 
 The project combines Natural Language Processing and Computer Vision in a single multimodal regression architecture.
 
-### 🎯 Result
+### Result
 
 **Test MAE: 38.77 kcal**
 
@@ -28,7 +28,7 @@ The target metric for the project was **MAE < 50 kcal**.
 
 The final model successfully achieved the required quality threshold.
 
-### 🧠 Architecture
+###  Architecture
 
 The model consists of three branches:
 
@@ -48,7 +48,7 @@ Dish image ───────► ResNet18 ─────► Image features �
 Portion mass ─────► MLP ──────────► Mass features ─┘
 ```
 
-### ⚙️ Training
+###  Training
 
 The model was trained using:
 
@@ -62,7 +62,7 @@ The model was trained using:
 
 The official test split was kept separate from training and model selection.
 
-### 🔎 Error Analysis
+###  Error Analysis
 
 After inference, the five test samples with the largest absolute prediction errors were analyzed.
 
@@ -90,7 +90,7 @@ Detailed EDA, training history, visualizations, test evaluation and error analys
 
 Задача сформулирована как задача регрессии.
 
-### 🎯 Результат
+###  Результат
 
 **MAE на тестовой выборке: 38.77 ккал**
 
@@ -98,7 +98,7 @@ Detailed EDA, training history, visualizations, test evaluation and error analys
 
 Таким образом, итоговая модель достигла требуемого качества.
 
-### 🧠 Архитектура
+###  Архитектура
 
 Модель состоит из трёх основных ветвей:
 
@@ -118,7 +118,7 @@ Detailed EDA, training history, visualizations, test evaluation and error analys
 Масса порции ─────► MLP ─────────► Числовые признаки ──┘
 ```
 
-### ⚙️ Обучение
+###  Обучение
 
 При обучении использовались:
 
@@ -132,7 +132,7 @@ Detailed EDA, training history, visualizations, test evaluation and error analys
 
 Официальная тестовая выборка не использовалась для обучения и выбора лучшей модели.
 
-### 🔎 Анализ ошибок
+###  Анализ ошибок
 
 После получения предсказаний были проанализированы пять объектов тестовой выборки с наибольшей абсолютной ошибкой.
 
@@ -144,7 +144,7 @@ Detailed EDA, training history, visualizations, test evaluation and error analys
 
 ---
 
-## 📁 Repository Structure / Структура репозитория
+##  Repository Structure / Структура репозитория
 
 ```text
 nutrition-calorie-prediction/
@@ -168,7 +168,7 @@ The dataset is not included in the repository due to its size.
 
 ---
 
-## 🚀 Run / Запуск
+##  Run / Запуск
 
 Install dependencies / Установите зависимости:
 
@@ -188,13 +188,13 @@ Dataset paths and training parameters can be configured in `scripts/config.py`.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 `Python` · `PyTorch` · `Transformers` · `DistilBERT` · `ResNet18` · `torchvision` · `pandas` · `NumPy` · `Matplotlib`
 
 ---
 
-## 📚 Project Context / О проекте
+##  Project Context / О проекте
 
 🇬🇧 The project was developed as part of a Deep Learning course and focuses on building a reproducible multimodal training and evaluation pipeline.
 
